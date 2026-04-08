@@ -28,6 +28,12 @@ sourceSets.main.resources {
 
 repositories {
     // Add here additional repositories if required by some of the dependencies below.
+    maven {
+        url "https://cursemaven.com"
+        content {
+            includeGroup "curse.maven"
+        }
+    }
 }
 
 base {
@@ -47,7 +53,7 @@ neoForge {
     }
 
     // This line is optional. Access Transformers are automatically detected
-    // accessTransformers = project.files('src/main/resources/META-INF/accesstransformer.cfg')
+    accessTransformers = project.files('src/main/templates/META-INF/accesstransformer.cfg')
 
     // Default run configurations.
     // These can be tweaked, removed, or duplicated as needed.
@@ -135,7 +141,11 @@ dependencies {
 
     // Example project dependency using a sister or child project:
     // implementation project(":myproject")
-
+    implementation "curse.maven:draconic-evolution-223565:7584459"
+    runtimeOnly "curse.maven:codechicken-lib-1-8-242818:7281427"
+    runtimeOnly "curse.maven:brandons-core-231382:7130990"
+    runtimeOnly "curse.maven:jei-238222:7420587"
+    runtimeOnly "curse.maven:create-328085:7408951"
     // For more info:
     // http://www.gradle.org/docs/current/userguide/artifact_dependencies_tutorial.html
     // http://www.gradle.org/docs/current/userguide/dependency_management.html

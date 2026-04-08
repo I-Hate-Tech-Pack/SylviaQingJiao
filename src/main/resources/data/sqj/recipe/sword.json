@@ -1,0 +1,37 @@
+{
+  "type": "create:mechanical_crafting",
+  "accept_mirrored": false,
+  "category": "misc",
+  "key": {
+    "S": {
+      "item": "draconicevolution:draconic_sword"
+    },
+    "D": {
+      "item": "draconicevolution:energy_core"
+    },
+    "T": {
+      "item": "minecraft:trident"
+    },
+    "B": {
+      "item": "draconicevolution:awakened_draconium_block"
+    },
+    "A": {
+      "item": "draconicevolution:awakened_core"
+    },
+    "C": {
+      "item": "draconicevolution:dragon_heart"
+    }
+  },
+  "pattern": [
+    "  B T",
+    " B A ",
+    "S A B",
+    " C B ",
+    "D S  "
+  ],
+  "result": {
+    "count": 1,
+    "id": "sqj:sword"
+  },
+  "show_notification": false
+}
