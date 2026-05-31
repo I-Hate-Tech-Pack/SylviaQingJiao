@@ -179,7 +179,7 @@ neoForge.ideSyncTask generateModMetadata
 publishing {
     publications {
         mavenJava(MavenPublication) {
-            artifact Jar
+            from components.java
             artifact sourcesJar
         }
     }
